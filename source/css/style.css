@@ -1,0 +1,230 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: gray;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.header .logo::before{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+    background-image: url(https://imagepng.org/wp-content/uploads/2019/05/dinheiro-icone.png);  
+    margin-right: 10px; 
+}
+
+.header{
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header nav ul{
+    display: flex;
+    margin-right: 10px;
+}
+
+.header nav ul li a{
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+    margin-inline: 10px;
+}
+
+.header nav ul li:hover a{
+    background-color: seagreen;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+
+label .quadrado-menu{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    display: none;
+}
+
+label .quadrado-menu .linha-menu{
+      height: 2px;
+      width: 30px;
+      background-color: black;
+      position: absolute;
+      top: 23px;
+      right: 13px;
+      transition: 0.3s ease-in-out;
+}
+
+label .quadrado-menu .linha-menu::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+label .quadrado-menu .linha-menu::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: -10px;
+    transition: 0.3s ease-in-out;
+}
+
+.header input:checked ~ label .quadrado-menu .linha-menu{
+    transform: rotate(45deg);
+   
+}
+
+
+.header input:checked ~ label .quadrado-menu .linha-menu::before{
+    transform: rotate(90deg);
+    top: 0px;
+}
+
+.header input:checked ~ label .quadrado-menu .linha-menu::after{
+    transform: rotate(90deg);
+    top: 0px;
+}
+
+
+.area-de-calculo{
+    background-color: aliceblue;
+    margin-top: 30px;
+    height: 120px;
+    width: 50%;
+    border-radius: 0px 20px 20px 0px;
+
+}
+
+.area-de-calculo .area-de-inclusao{
+    margin-left: 20px;
+}
+
+.area-de-calculo .area-de-inclusao h1{
+    font-size: 25px;
+    margin-block: 10px;
+}
+
+.area-de-calculo .area-de-inclusao input{
+    height: 30px;
+    border: solid 2px seagreen;
+    border-radius: 18px 60px 18px 60px;
+    text-align: center;
+}
+
+.area-de-calculo .area-de-inclusao button{
+    height: 30px;
+    border: solid 2px seagreen;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+
+.button{
+    margin-top: 10px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.button:active{
+    background-color: #8BC767;
+    color: aliceblue;
+    
+}
+
+ .area-de-calculo .resultado{
+    opacity: 0;
+    max-height: 0; /* Altura inicial 0 para dar o efeito de aparecer de cima */
+    overflow: hidden; /* Esconde conteúdo extra */
+    transition: opacity 0.5s ease, max-height 0.5s ease; /* Transição suave */
+
+}
+
+.area-de-calculo .resultado{
+    margin-block: 10px;
+    background-color: seagreen;
+    margin-top: 15px;
+    display: inline-block;
+    width: 100%;
+    border-radius: 10px;  
+    padding-left: 20px; 
+    opacity: 0;
+    max-height: 0; /* Altura inicial 0 para dar o efeito de aparecer de cima */
+    overflow: hidden; /* Esconde conteúdo extra */
+    transition: opacity 0.9s ease, max-height 0.9s ease; /* Transição suave */
+
+}
+
+.resultado.mostrar {
+    opacity: 1;
+    max-height: 500px; /* Tamanho máximo suficiente para mostrar o conteúdo */
+}
+
+.area-de-calculo .resultado p{
+    background-color: aliceblue;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+
+.imagem{
+    max-width: 645px;
+    min-width: 300px;
+    margin: 0 auto;
+    margin-inline: 20px;
+    background-color: white;
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    border-radius: 18px; 
+    
+}
+
+.imagem h2{
+    margin-left: 10px;
+    text-align: center;
+    
+}
+
+.imagem img{
+    max-width: 100%;
+    border-radius: 20px;}
+
+
+    .formataçao-de-resultado{
+        font-size: 18px;
+        max-width: 100%;
+        background-color: aliceblue;
+        padding: 5px;
+        animation: go-back 1s;
+    }
+    
+
+  
+
+@keyframes go-back {
+    0% {
+        transform: translateX(-50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

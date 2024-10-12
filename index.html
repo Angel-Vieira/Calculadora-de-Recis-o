@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="source/css/style.css">
+    <link rel="stylesheet" href="source/css/reset.css">
+    <link rel="stylesheet" href="source/css/responsivo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+            <h1>Calculadora de Recisão</h1>
+        </div>
+
+        <nav>
+            <input class="checkbox" type="checkbox" id="menu">
+            <label for="menu">
+                <div class="quadrado-menu">
+                    <span class="linha-menu"></span>
+                </div>
+            </label>
+
+            <ul>
+                <li><a href="#">Dicas de investimentos</a></li>
+                <li><a href="#">Quem somos</a></li>
+                <li><a href="#">Informações</a></li>
+            </ul>
+        </nav>
+    </header>
+<div class="contend">
+    <div class="area-de-calculo">
+        <div class="area-de-inclusao">
+            
+            <h1>Calcule Aqui</h1>
+        
+                <input type="text" placeholder="Salário Bruto mensal" name="peso" class="texto">
+                <input type="text" placeholder="Data de admissão" name="admissão" class="texto">
+                <input type="text" placeholder="Data de demissão" name="admissão" class="texto">
+                <button class="button" name="button"> Calcular Recisão</button>
+        </div>
+        
+        <div class="resultado" id="mostrarResultado">
+        </div>
+    </div>
+</div>
+
+    <script src="./javascript/index.js"></script>
+</body>
+</html>

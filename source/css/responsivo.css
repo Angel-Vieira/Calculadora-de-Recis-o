@@ -1,0 +1,88 @@
+@media (max-width:950px){
+    label .quadrado-menu{
+        display: flex;
+        align-self: flex-end;
+    }
+
+    .header nav ul{
+        display: none;
+    }
+
+    .checkbox:checked ~ ul{
+        display: block;
+        position: absolute;
+        right: 0px;
+        margin-right: 0px;
+        background-color: aliceblue;
+        width: 150px;
+        text-align: center;
+    }
+
+    .checkbox:checked ~ ul li{
+     margin-block: 20px;
+    }
+}
+
+.checkbox{
+    display: none;
+}
+
+
+
+@media(max-width:995px){
+
+    .contend{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        
+    }
+    .area-de-calculo{
+        
+        height: 200px;
+        margin: 50px 0px 20px 20px;
+        border-radius: 20px;
+        
+    }
+
+    .area-de-calculo .area-de-inclusao{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        align-items: center;
+        margin-left: 0px;
+        
+    }
+
+
+    .area-de-calculo .area-de-inclusao input{
+         width: 70%;
+    }
+
+    .area-de-calculo .area-de-inclusao h1{
+        font-size: 25px;
+    }
+
+    .area-de-calculo .resultado{
+        max-width: 120%;
+        padding-left: 10px;
+    }
+
+
+    .header .logo h1{
+        font-size: 27px; 
+    }
+
+    .button{
+        margin: 0px;
+    }
+    .imagem{
+        margin-top: 100px;
+    }
+
+}
+
+
