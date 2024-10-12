@@ -37,13 +37,14 @@
         justify-content: center;
         width: 100%;
         
+        
     }
     .area-de-calculo{
         
         height: 200px;
         margin: 50px 0px 20px 20px;
         border-radius: 20px;
-        
+        width: 80%;
     }
 
     .area-de-calculo .area-de-inclusao{
@@ -59,7 +60,7 @@
 
 
     .area-de-calculo .area-de-inclusao input{
-         width: 70%;
+         width: 80%;
     }
 
     .area-de-calculo .area-de-inclusao h1{
