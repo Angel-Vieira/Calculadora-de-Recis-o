@@ -1,4 +1,4 @@
-html{
+ html{
     font-family: 'Roboto', sans-serif;
 }
 
@@ -99,33 +99,49 @@ label .quadrado-menu .linha-menu::after{
 .header input:checked ~ label .quadrado-menu .linha-menu::after{
     transform: rotate(90deg);
     top: 0px;
+} 
+
+
+.contend{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  
+   
 }
 
 
-.area-de-calculo{
-    background-color: aliceblue;
-    margin-top: 30px;
-    height: 120px;
-    width: 50%;
-    border-radius: 0px 20px 20px 0px;
 
-}
 
-.area-de-calculo .area-de-inclusao{
-    margin-left: 20px;
-}
+ .area-de-calculo .area-de-inclusao{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%; 
+         align-items: center;
+        margin-left: 0px;
+        background-color: aliceblue;
+        border-radius: 20px;
+       padding-bottom: 10px;
+        padding-inline: 75px;
+         width: 100%; 
+        
+        
+    }
 
-.area-de-calculo .area-de-inclusao h1{
-    font-size: 25px;
-    margin-block: 10px;
-}
+
 
 .area-de-calculo .area-de-inclusao input{
     height: 30px;
     border: solid 2px seagreen;
     border-radius: 18px 60px 18px 60px;
     text-align: center;
-}
+    margin: 10px;
+    padding: 10px;
+} 
 
 .area-de-calculo .area-de-inclusao button{
     height: 30px;
@@ -133,14 +149,11 @@ label .quadrado-menu .linha-menu::after{
     text-align: center;
     border-radius: 10px;
     padding: 5px;
-    
-}
-
-.button{
-    margin-top: 10px;
-    margin-left: 30px;
     cursor: pointer;
-}
+    
+} 
+
+
 
 .button:active{
     background-color: #8BC767;
@@ -148,11 +161,15 @@ label .quadrado-menu .linha-menu::after{
     
 }
 
+
+
  .area-de-calculo .resultado{
     opacity: 0;
     max-height: 0; /* Altura inicial 0 para dar o efeito de aparecer de cima */
     overflow: hidden; /* Esconde conteúdo extra */
     transition: opacity 0.5s ease, max-height 0.5s ease; /* Transição suave */
+    
+    
 
 }
 
@@ -173,15 +190,16 @@ label .quadrado-menu .linha-menu::after{
 
 .resultado.mostrar {
     opacity: 1;
-    max-height: 500px; /* Tamanho máximo suficiente para mostrar o conteúdo */
+      max-height: 500px; 
+    
 }
 
-.area-de-calculo .resultado p{
+ .area-de-calculo .resultado p{
     background-color: aliceblue;
     margin: 10px;
     padding: 5px;
     border-radius: 10px;
-}
+} 
 
 
 
@@ -216,7 +234,7 @@ label .quadrado-menu .linha-menu::after{
         padding: 5px;
         animation: go-back 1s;
     }
-    
+     
 
   
 

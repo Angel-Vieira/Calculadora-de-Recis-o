@@ -29,6 +29,7 @@ document.querySelector(".button").addEventListener("click", function () {
  
     // Cálculo de férias e décimo terceiro proporcionais
     const feriasProporcionais = ((salarioBruto / 12) * mesesminimos) +((salarioBruto / 12) * mesesminimos)/3 ;
+    
     const decimoTerceiroProporcional = (salarioBruto / 12) * mesestotais;
     console.log(mesesminimos)
  
