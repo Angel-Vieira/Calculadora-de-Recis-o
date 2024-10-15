@@ -203,29 +203,6 @@ label .quadrado-menu .linha-menu::after{
 
 
 
-.imagem{
-    max-width: 645px;
-    min-width: 300px;
-    margin: 0 auto;
-    margin-inline: 20px;
-    background-color: white;
-    display: flex;
-    margin-top: 30px;
-    flex-direction: column;
-    border-radius: 18px; 
-    
-}
-
-.imagem h2{
-    margin-left: 10px;
-    text-align: center;
-    
-}
-
-.imagem img{
-    max-width: 100%;
-    border-radius: 20px;}
-
 
     .formataçao-de-resultado{
         font-size: 18px;
@@ -238,11 +215,3 @@ label .quadrado-menu .linha-menu::after{
 
   
 
-@keyframes go-back {
-    0% {
-        transform: translateX(-50px);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
